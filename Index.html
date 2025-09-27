@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UK Route with Weather Forecast</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      font-family: Arial, sans-serif;
-    }
+    <title>UK Route with Weather Forecast</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
 
-    #sidebar {
-      width: 340px;
-      overflow-y: auto;
-      border-right: 1px solid #ccc;
-      padding: 1em;
-      background: #f9f9f9;
-    }
+        #sidebar {
+            width: 340px;
+            overflow-y: auto;
+            border-right: 1px solid #ccc;
+            padding: 1em;
+            background: #f9f9f9;
+        }
 
-    #map {
-      flex: 1;
-    }
+        #map {
+            flex: 1;
+        }
 
-    #routeForm {
-      margin-bottom: 1em;
-    }
+        #routeForm {
+            margin-bottom: 1em;
+        }
 
-    #routeForm input, #routeForm button {
-      display: block;
-      width: 100%;
-      margin-bottom: 0.5em;
-      padding: 0.4em;
-    }
-  </style>
+            #routeForm input, #routeForm button {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.5em;
+                padding: 0.4em;
+            }
+    </style>
 </head>
 <body>
-  <div id="sidebar">
-    <form id="routeForm">
-      <input id="start" type="text" placeholder="Start location" required>
-      <input id="end" type="text" placeholder="End location" required>
-      <label for="departTime">Start date & time:</label>
-      <input id="departTime" type="datetime-local" required>
-      <button type="submit">Get Route</button>
-    </form>
-    <div id="panel"></div>
-  </div>
-  <div id="map"></div>
+    <div id="sidebar">
+        <form id="routeForm">
+            <input id="start" type="text" placeholder="Start location" required>
+            <input id="end" type="text" placeholder="End location" required>
+            <label for="departTime">Start date & time:</label>
+            <input id="departTime" type="datetime-local" required>
+            <button type="submit">Get Route</button>
+        </form>
+        <div id="panel"></div>
+    </div>
+    <div id="map"></div>
 
-  <!-- Replace YOUR_GOOGLE_API_KEY with your actual key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=geometry"></script>
-  <script src="app.js"></script>
+    <!-- Replace YOUR_GOOGLE_API_KEY with your actual key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsnSGlaNjbjv8Bi4KMYz10DsBQu7s-zjM&libraries=geometry"></script>
+    <script src="app.js"></script>
 </body>
 </html>
